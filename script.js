@@ -9,9 +9,12 @@ let current = 0;
 const photo = document.getElementById("photo");
 const button = document.getElementById("startBtn");
 const music = document.getElementById("bgMusic");
+
 button.addEventListener("click", () => {
-  music.play();  button.style.display = "none";
-music.currentTime = 0;
+    music.currentTime = 0;
+    music.play();
+    button.style.display = "none";
+
     setInterval(() => {
         current++;
         if (current >= images.length) {
