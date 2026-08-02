@@ -62,3 +62,28 @@ button{
 button:hover{
     background:#e91e63;
 }
+.balloons{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image:
+        radial-gradient(circle, red 8px, transparent 9px),
+        radial-gradient(circle, blue 8px, transparent 9px),
+        radial-gradient(circle, yellow 8px, transparent 9px),
+        radial-gradient(circle, green 8px, transparent 9px),
+        radial-gradient(circle, pink 8px, transparent 9px);
+    background-size: 120px 120px;
+    animation: floatBalloons 12s linear infinite;
+}
+
+@keyframes floatBalloons {
+    from {
+        background-position: 0 100%;
+    }
+    to {
+        background-position: 0 -100%;
+    }
+}
