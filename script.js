@@ -11,7 +11,7 @@ const button = document.getElementById("startBtn");
 const music = document.getElementById("bgMusic");
 button.addEventListener("click", () => {
   music.play();  button.style.display = "none";
-
+music.currentTime = 0;
     setInterval(() => {
         current++;
         if (current >= images.length) {
