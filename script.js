@@ -3,7 +3,6 @@ const images = [
   "Screenshot_20260801-205905.jpg",
   "file_00000000b9e0820ba22eac6950f6e747.png"
 ];
-];
 
 let current = 0;
 
