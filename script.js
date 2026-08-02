@@ -8,9 +8,9 @@ let current = 0;
 
 const photo = document.getElementById("photo");
 const button = document.getElementById("startBtn");
-
+const music = new Audio("music.mp3");
 button.addEventListener("click", () => {
-    button.style.display = "none";
+  music.play();  button.style.display = "none";
 
     setInterval(() => {
         current++;
