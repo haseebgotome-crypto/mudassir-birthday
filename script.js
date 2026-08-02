@@ -8,7 +8,7 @@ let current = 0;
 
 const photo = document.getElementById("photo");
 const button = document.getElementById("startBtn");
-const music = new Audio("music.mp3");
+const music = document.getElementById("bgMusic");
 button.addEventListener("click", () => {
   music.play();  button.style.display = "none";
 
