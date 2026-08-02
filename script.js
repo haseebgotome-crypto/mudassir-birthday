@@ -1,7 +1,8 @@
 const images = [
-  "photo1.jpg",
-  "photo2.jpg",
-  "photo3.jpg"
+  "Screenshot_20260801-205849.jpg",
+  "Screenshot_20260801-205905.jpg",
+  "file_00000000b9e0820ba22eac6950f6e747.png"
+];
 ];
 
 let current = 0;
