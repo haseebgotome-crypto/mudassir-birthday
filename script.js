@@ -56,4 +56,3 @@ function fireworks() {
 
     requestAnimationFrame(fireworks);
 }
-fireworks();
