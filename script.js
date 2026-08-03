@@ -15,6 +15,7 @@ button.addEventListener("click", () => {
     music.play().catch(error => console.log(error));
     button.style.display = "none";
 fireworks();
+  photo.style.animation = "zoomPhoto 3s infinite";
     setInterval(() => {
         current = (current + 1) % images.length;
         photo.src = images[current];
@@ -50,3 +51,4 @@ function fireworks() {
 
     requestAnimationFrame(fireworks);
 }
+fireworks();
