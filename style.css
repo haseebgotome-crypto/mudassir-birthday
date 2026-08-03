@@ -187,3 +187,17 @@ setInterval(() => {
     pointer-events: none;
     z-index: 0;
         }
+.cake{
+    font-size:70px;
+    margin:15px 0;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
