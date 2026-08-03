@@ -12,8 +12,7 @@ const music = document.getElementById("bgMusic");
 
 button.addEventListener("click", () => {
     music.currentTime = 0;
-    music.play();
-
+    music.play().catch(error => console.log(error));
     button.style.display = "none";
 fireworks();
     setInterval(() => {
