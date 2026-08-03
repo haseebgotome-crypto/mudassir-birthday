@@ -15,7 +15,7 @@ button.addEventListener("click", () => {
     music.play();
 
     button.style.display = "none";
-
+fireworks();
     setInterval(() => {
         current = (current + 1) % images.length;
         photo.src = images[current];
