@@ -16,6 +16,11 @@ button.addEventListener("click", () => {
     button.style.display = "none";
 fireworks();
   photo.style.animation = "zoomPhoto 3s infinite";
+  confetti({
+    particleCount: 200,
+    spread: 120,
+    origin: { y: 0.6 }
+});
     setInterval(() => {
         current = (current + 1) % images.length;
         photo.src = images[current];
