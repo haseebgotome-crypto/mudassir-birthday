@@ -23,3 +23,29 @@ button.addEventListener("click", () => {
         photo.src = images[current];
     }, 3000);
 });
+const canvas = document.getElementById("fireworks");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+function drawFireworks() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < 25; i++) {
+        ctx.beginPath();
+        ctx.arc(
+            Math.random() * canvas.width,
+            Math.random() * canvas.height,
+            3,
+            0,
+            Math.PI * 2
+        );
+        ctx.fillStyle = `hsl(${Math.random() * 360},100%,50%)`;
+        ctx.fill();
+    }
+
+    requestAnimationFrame(drawFireworks);
+}
+
+drawFireworks();
