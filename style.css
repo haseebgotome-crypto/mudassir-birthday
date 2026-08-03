@@ -76,3 +76,26 @@ button:hover{
     position: relative;
     z-index: 2;
 }
+@keyframes zoomPhoto {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#photo {
+    animation: zoomPhoto 3s infinite;
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
