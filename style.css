@@ -113,3 +113,19 @@ canvas#fireworks{
     position: relative;
     z-index: 1;
 }
+.dua{
+    margin-top:20px;
+    padding:15px;
+    background:#fff5f8;
+    border-radius:15px;
+}
+
+.dua h3{
+    color:#e91e63;
+    margin-bottom:10px;
+}
+
+.dua p{
+    color:#444;
+    line-height:1.6;
+}
